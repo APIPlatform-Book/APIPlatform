@@ -1,0 +1,29 @@
+FORMAT: 1A
+HOST: http://API.MRA.com/
+
+# MRAArtist
+Provides all the Artists related activities covering which artists are handled by the label,
+what titles the label can distribute and where they can distribute to.
+
+## Artists Collection [/Artists]
+Returns all the artists that MRA handles and which countries that MRA has distribution rights for
+
+### List All Artists [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "Artist": "WholeLottaLed",
+                "DistributionAgreedFor": 
+                [
+                    "Title" : "4 Symbols",
+                    {
+                        "Country": "UK",
+                        "DistributionStart": "10-09-70",
+                        "DistributionEnd": "10-09-2070",
+                        "Format" : "CD"
+                    }
+                ]
+            }
+        ]
