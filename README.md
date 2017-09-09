@@ -9,10 +9,10 @@ This website seeks to fulfill several purposes:
 ## Site Resources
 - [About the Book](about.md)
 - About the Authors
---- [Luis Weir](luis.md)
---- [Phil Wilkins](phil.md)
---- [Sander Rensen](sander.md)
---- [Andy Bell](andy.md)
+ -- [Luis Weir](luis.md)
+ -- [Phil Wilkins](phil.md)
+ -- [Sander Rensen](sander.md)
+ -- [Andy Bell](andy.md)
 
 ### General API Content
 - Useful Third API Resources
