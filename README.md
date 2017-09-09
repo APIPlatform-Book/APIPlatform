@@ -23,7 +23,7 @@ This website seeks to fulfill several purposes:
 - API-Platform Aditional Articles
 
 
-[linkLW]: </authors/luis.md>
+[linkLW]: <lw.md>
 [linkPW]: </authors/phil.md>
 [linkSR]: </authors/sander.md>
 [linkAB]: </authors/andy.md>
