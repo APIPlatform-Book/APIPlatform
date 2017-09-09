@@ -9,10 +9,10 @@ This website seeks to fulfill several purposes:
 ## Site Resources
 - [About the Book](about.md)
 - About the Authors
- -- [Luis Weir](lw.md)
- -- [Phil Wilkins][linkPW]
- -- [Sander Rensen][linkSR]
- -- [Andy Bell][LinkAB]
+ -- [Luis Weir](auth-lw.md)
+ -- [Phil Wilkins](auth-pw.md)
+ -- [Sander Rensen](auth-sr.md)
+ -- [Andy Bell](auth-ab.md)
 
 ### General API Content
 - Useful Third API Resources
@@ -23,7 +23,3 @@ This website seeks to fulfill several purposes:
 - API-Platform Aditional Articles
 
 
-[linkLW]: <lw.md>
-[linkPW]: </authors/phil.md>
-[linkSR]: </authors/sander.md>
-[linkAB]: </authors/andy.md>
