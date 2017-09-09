@@ -1,3 +1,7 @@
+---
+title: APIPlatform.Cloud Home
+layout: post
+---
 # API Platform
 <img src="https://www.packtpub.com/sites/default/files/8683.png" width="150" align="right">
 This website seeks to fulfill several purposes:
