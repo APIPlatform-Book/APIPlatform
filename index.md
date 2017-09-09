@@ -9,7 +9,7 @@ This website seeks to fulfill several purposes:
 ## Site Resources
 - [About the Book](about.md)
 - About the Authors
- -- [Luis Weir][linkLW]
+ -- [Luis Weir](lw.md)
  -- [Phil Wilkins][linkPW]
  -- [Sander Rensen][linkSR]
  -- [Andy Bell][LinkAB]
