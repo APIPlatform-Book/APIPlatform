@@ -9,10 +9,10 @@ This website seeks to fulfill several purposes:
 ## Site Resources
 - [About the Book](about.md)
 - About the Authors
- -- [Luis Weir](luis.md)
- -- [Phil Wilkins](phil.md)
- -- [Sander Rensen](sander.md)
- -- [Andy Bell](andy.md)
+ -- [Luis Weir][linkLW]
+ -- [Phil Wilkins][linkPW]
+ -- [Sander Rensen][linkSR]
+ -- [Andy Bell][LinkAB]
 
 ### General API Content
 - Useful Third API Resources
@@ -21,3 +21,9 @@ This website seeks to fulfill several purposes:
 ### Oracle API Platform
 - Documentation
 - API-Platform Aditional Articles
+
+
+[linkLW]: </authors/luis.md>
+[linkPW]: </authors/phil.md>
+[linkSR]: </authors/sander.md>
+[linkAB]: </authors/sander.md>
