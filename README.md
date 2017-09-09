@@ -26,4 +26,4 @@ This website seeks to fulfill several purposes:
 [linkLW]: </authors/luis.md>
 [linkPW]: </authors/phil.md>
 [linkSR]: </authors/sander.md>
-[linkAB]: </authors/sander.md>
+[linkAB]: </authors/andy.md>
