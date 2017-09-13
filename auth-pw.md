@@ -12,3 +12,4 @@ When not immersed in work and technology, he spends his down time pursuing his p
 - [MP3Monster.org](https://mp3monster.org)
 - [oracle-integration.cloud](https://oracle-integration.cloud)
 - [Capgemini Expert Connect](https://www.capgemini.com/experts/oracle/phil-wilkins/)
+- [LinkedIn](https://www.linkedin.com/in/philwilkins/)
