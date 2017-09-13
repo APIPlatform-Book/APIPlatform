@@ -1,0 +1,12 @@
+# Additional Articles and presentations about the Oracle API Platform by the authors:
+- [API Management & Microservices A Match Made in Heaven](https://youtu.be/DnkuSko9OwU)
+- [Architecting APIs In The enterprise](https://community.oracle.com/docs/DOC-1007757)
+- [SOA/API tools in 2 Minutes](http://blogs.oracle.com/otn/podcast-show-notes%3A-api-management-roundtable)
+- [3rd-Generation API Management: From Proxies to Micro-Gateways](http://www.oracle.com/technetwork/articles/soa/weir-3rd-gen-api-mgmt-3787102.html)
+- [Registries: Use Cases for API Management and Microservices](http://www.oracle.com/technetwork/articles/wilkins-api-mgmt-3796702.html)
+- [API Platform Overview](http://www.soa4u.co.uk/2017/05/oracle-api-platform-cloud-service.html)
+- [UK Oracle User Group 2016 (Birmingham): Enterprise API Management](http://www.slideshare.net/luisw19/ukoug-implementing-enterprise-api-management-in-the-oracle-cloud)
+- [Oracle Open World 2016 (San Francisco): Microservices and SOA](http://www.slideshare.net/capgemini/microservices-and-soa)
+- [Oracle Open World 2016 (San Francisco): Implementing Enterprise API Management in the Oracle Cloud](http://www.slideshare.net/capgemini/implementing-enterprise-api-management-in-oracle-cloud)
+- [Oracle Open World 2016 (San Francisco): API Management in the year 2026](http://www.slideshare.net/capgemini/oracle-api-management-in-the-year-2026)
+- [Oracle API Platform Cloud Service Best Practices & Lessons Learnt](https://www.slideshare.net/luisw19/oracle-api-platform-cloud-service-best-practices-lessons-learnt)
