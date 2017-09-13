@@ -70,7 +70,10 @@ Version 2 adopts a HATEOAS style
             ]
         }
         
-## Artist - Version 2 [/v2/Artist/{artistsId}]
+### Put all artists [PUT]
++ Response 500
+
+## Artist - Version 2 [/v2/Artist/{artistId}]
 Provides the details for a specific artist - constructs use HATEOAS model       
 
 ### Get Artist [GET]
@@ -87,21 +90,23 @@ Provides the details for a specific artist - constructs use HATEOAS model
             ]
         }
         
-### Put all artists [PUT]
+### Put Artist [PUT]
 + Response 500        
         
-## Get DistributionAgreement - Version 2 [/v2/DistAgreement/{agreementId}]
+
+## Get DistributionAgreement - Version 2 [/v2/DistAgreement/{DistributionAgreementId}]
+
 Provides the details for a specific artist - constructs use HATEOAS model  
 
 ### Get Distribution Agreement [GET]
 
-+ Response 200 (application/json)      
++ Response 200 (application/json)
 
-    {
-        "DistributionAgreementId" : "10050099",
-        "DistributionAgreedFor" :               
+        {
+            "DistributionAgreementId" : "10050099",
+            "Title" : "Faded Seaside Galmour",
+            "DistributionAgreedFor" :
             [
-               "Title" : "Faded Seaside Galmour",
                 {
                     "Country": "UK",
                     "DistributionStart": "10-09-2006",
@@ -115,4 +120,4 @@ Provides the details for a specific artist - constructs use HATEOAS model
                     "Format" : "download"
                 }                    
             ]
-    }
+        }
