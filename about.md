@@ -6,7 +6,7 @@ You’ll first learn about Oracle’s new platform as an overview, and then stud
 
 This broad scoped book completes your journey with a clear examination of how to migrate API from Oracle API Management 12c to the new Oracle API Platform, so that you can step into the future confidently.
 
-##The book can be ordered [here](bit.ly/APIP-CS) or [here](bit.ly/APIP-CS-Amazon)
+## The book can be ordered [here](bit.ly/APIP-CS) or [here](bit.ly/APIP-CS-Amazon)
 
 # Contents
 __Chapter 1 – Platform Overview__ – This chapter provides an overview of the platform, introducing key concepts and the capabilities from the perspective of the management console.
