@@ -16,6 +16,6 @@ This website seeks to fulfill several purposes:
 
 ### Additional Resources
 - [Documentation](https://cloud.oracle.com/api-platform)
-- [API-Platform Aditional Articles from the Authors](/articles.md)
+- [API-Platform Aditional Articles from the Authors](articles.md)
 
 
