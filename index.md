@@ -14,12 +14,8 @@ This website seeks to fulfill several purposes:
  -- [Sander Rensen](auth-sr.md)
  -- [Andy Bell](auth-ab.md)
 
-### General API Content
-- Useful Third API Resources
-- Tools we'd recommend
-
-### Oracle API Platform
-- Documentation
-- API-Platform Aditional Articles
+### Additional Resources
+- [Documentation](https://cloud.oracle.com/api-platform)
+- [API-Platform Aditional Articles from the Authors](/articles.md)
 
 
