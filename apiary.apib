@@ -5,7 +5,7 @@ HOST: http://API.MRA.com/
 Provides all the Artists related activities covering which artists are handled by the label,
 what titles the label can distribute and where they can distribute to.
 
-## Artists Collection [/Artists]
+## Artists Collection - Version 1 [/v1/Artists]
 Returns all the artists that MRA handles and which countries that MRA has distribution rights for
 
 ### List All Artists [GET]
@@ -14,16 +14,105 @@ Returns all the artists that MRA handles and which countries that MRA has distri
 
         [
             {
-                "Artist": "WholeLottaLed",
+                "Artist": "The  Delays",
+                "ArtistId" : "101",
+                "DistributionAgreedForId": "10050099"
                 "DistributionAgreedFor": 
                 [
-                    "Title" : "4 Symbols",
+                    "Title" : "Faded Seaside Galmour",
                     {
                         "Country": "UK",
-                        "DistributionStart": "10-09-70",
+                        "DistributionStart": "10-09-2006",
                         "DistributionEnd": "10-09-2070",
                         "Format" : "CD"
                     }
+                    {
+                        "Country": "UK",
+                        "DistributionStart": "10-09-2006",
+                        "DistributionEnd": "10-09-2070",
+                        "Format" : "Download"
+                    }                    
                 ]
             }
+            {
+                "Artist": "The Boxer Rebellion",
+                "ArtistId" : "102",                
+                "DistributionAgreedForId": "10050098"
+                "DistributionAgreedFor": 
+                [
+                    "Title" : "Ocean by Ocean",
+                    {
+                        "Country": "UK",
+                        "DistributionStart": "14-04-2017",
+                        "DistributionEnd": "14-04-2027",
+                        "Format" : "CD"
+                    }
+                ]
+            }            
         ]
+### Put all artists [PUT]
++ Response 500
+
+
+## Artists Collection - Version 2 [/v2/Artists]
+Returns all the artists that MRA handles and which countries that MRA has distribution rights for.
+Version 2 adopts a HATEOAS style
+
+### List All Artists [GET]
+
++ Response 200 (application/json)
+
+        {
+            "Artists" :
+            [
+                {"rel": "self", "href": "/v2/Artist/101/"},
+                {"rel": "self", "href": "/v2/Artist/102/"}
+            ]
+        }
+        
+## Artist - Version 2 [/v2/Artist/{artistsId}]
+Provides the details for a specific artist - constructs use HATEOAS model       
+
+### Get Artist [GET]
+
++ Response 200 (application/json)      
+
+        {
+            "Artist": "The  Delays",
+            "ArtistId" : "101",
+            "DistributionAgreementIds" : 
+            [
+                {"rel": "self", "href": "/v2/DistAgreement/10050099/"},
+                {"rel": "self", "href": "/v2/DistAgreement/10050097/"}
+            ]
+        }
+        
+### Put all artists [PUT]
++ Response 500        
+        
+## Get DistributionAgreement - Version 2 [/v2/DistAgreement/{agreementId}]
+Provides the details for a specific artist - constructs use HATEOAS model  
+
+### Get Distribution Agreement [GET]
+
++ Response 200 (application/json)      
+
+    {
+        "DistributionAgreementId" : "10050099",
+        "DistributionAgreedFor" :               
+            [
+               "Title" : "Faded Seaside Galmour",
+                {
+                    "Country": "UK",
+                    "DistributionStart": "10-09-2006",
+                    "DistributionEnd": "10-09-2070",
+                    "Format" : "CD"
+                },
+                {
+                    "Country": "UK",
+                    "DistributionStart": "10-09-2006",
+                    "DistributionEnd": "10-09-2070",
+                    "Format" : "download"
+                }                    
+            ]
+    }
