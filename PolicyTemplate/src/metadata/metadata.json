@@ -1,0 +1,45 @@
+{
+    "type" : "o:%%POLICYNAME%%",
+    "name" : "policy.name",
+    "version" : "1.0",
+    "revision" : "1",
+    "schemaVersion" : "1",
+    "sdkVersion" : "3.0",
+    "category" : "@implementations.policyCategory.other",
+    "description" : "policy.description",
+    "constraints" : {
+        "direction" : "REQUEST_OR_RESPONSE",
+        "requestZone" : "30,40,50",
+        "responseZone" : "150",
+        "singleton" : false
+    },
+    "ui" : {
+        "edit" : {
+            "html" : "%%policyname%%-edit.html",
+            "js" : "%%policyname%%-edit.js",
+            "helpInfo" : "#helpInfo",
+            "helpUrl" : "http://www.oracle.com",
+            "helpTopicId" : "policies.%%policyname%%"
+        },
+        "view" : {
+            "html" : "%%policyname%%-view.html",
+            "js" : "%%policyname%%-view.js",
+            "helpInfo" : "#helpInfo",
+            "helpUrl" : "http://www.oracle.com",
+            "helpTopicId" : "policies.%%policyname%%"
+        },
+        "l10nbundle" : "L10n/%%policyname%%.json"
+    },
+    "configuration" : {
+        "services" : [
+            {
+                "type": "oracle.apiplatform.policies.sdk.validation.PolicyValidator",
+                "service": "oracle.apiplatform.policies.%%policyname%%.%%POLICYNAME%%Validator"
+            },
+            {
+                "type": "oracle.apiplatform.policies.sdk.runtime.PolicyRuntimeFactory",
+                "service": "oracle.apiplatform.policies.%%policyname%%.%%POLICYNAME%%RuntimeFactory"
+            }
+        ]
+    }
+}

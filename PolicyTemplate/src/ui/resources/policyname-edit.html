@@ -1,0 +1,19 @@
+<div id="policy-ui-content" class="oj-form">
+
+    <div class="oj-row">
+        <span data-bind="text:l10n()['label.condition.phrase']" class="condition-field-label-2"></span>
+    </div>
+    
+    <div class="conditions-container-div"></div>
+    
+    <div>
+        <label class="policy-dialog-field-label" for="script" data-bind="text:l10n()['label.field.header']"></label>
+        <textarea id="script" rows="10" style="resize: vertical;"
+                data-bind="ojComponent: {
+                placeholder: l10n()['placeholder.script'],
+                component: 'ojTextArea',
+                value: script,
+                rootAttributes: {style:'max-width:100%; resize: vertical;'} }"></textarea>
+    </div>
+    
+</div>
