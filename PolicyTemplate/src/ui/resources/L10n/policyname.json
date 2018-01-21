@@ -1,0 +1,10 @@
+{
+    "l10nBundle" : {
+        "policy.name"             : "%%POLICYNAME%%",
+        "policy.description"      : "<Policy description>",
+        "#helpInfo"               : "Complete all fields. Comments are optional.",
+        "label.field.header"      : "%%POLICYNAME%%",
+        "label.condition.phrase"  : "Pass the request/response if code runs to completion. Errors and rejections are handled as exceptions.",
+        "placeholder.script"      : ""
+    }
+}
