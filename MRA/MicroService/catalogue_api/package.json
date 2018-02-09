@@ -1,0 +1,28 @@
+{
+  "name": "catalogue_api",
+  "version": "1.0.0",
+  "description": "Catalogue api is created for the MRA example use case that supports the Oracle API Platform CS book",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "hal": "^1.2.0",
+    "halson": "^3.0.0",
+    "mongoose": "^4.13.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/APIPlatform-Book/APIPlatform.git"
+  },
+  "author": "Sander Rensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/APIPlatform-Book/APIPlatform/issues"
+  },
+  "homepage": "https://github.com/APIPlatform-Book/APIPlatform#readme"
+}

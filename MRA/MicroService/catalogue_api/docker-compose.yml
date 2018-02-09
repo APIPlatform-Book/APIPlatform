@@ -1,0 +1,16 @@
+version: "2"
+services:
+  catalogue_api:
+    build: . 
+    depends_on:
+      - mongodb
+    ports:
+      - "3000:3000"
+    links:
+      - mongodb
+  mongodb:
+    image: mongo:3.6.2
+    volumes:
+      - /data/catalogue_db:/data/catalogue_db
+    ports:
+      - "27017:27017" 
