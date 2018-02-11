@@ -8,6 +8,7 @@ module.exports = function (data) {
 
         data.createArtists(request.body,function(resultCreate){
 
+            response.header("Content-Type", "application/json");
             response.status(201);
             response.send();
             /*if(resultCreate.message != undefined){
@@ -33,12 +34,15 @@ module.exports = function (data) {
         data.searchArtists({"limit": limit,"name": artistName,"country": country,"genre": genre},function(result){
 
             if (result != undefined) {
+
+                //response.header("Content-Type", "application/json");
                 response.json({"artists": result});
 
                 //the album is referenced in the mongodb and this information need to be fetched separately.
 
             } else {
                 //404 is not found
+                response.header("Content-Type", "application/json");
                 response.status(404);
                 response.send();
             }
@@ -120,6 +124,7 @@ module.exports = function (data) {
                     .addLink('albums', '/v1/catalogue/artists/' + result[0].artist_id + '/albums')
                     .addLink('genres', '/v1/catalogue/artists/' + result[0].artist_id + '/genres')
 
+                response.header("Content-Type", "application/json");
                 response.status(200);
                 response.send(JSON.stringify(resource));
 
@@ -152,10 +157,12 @@ module.exports = function (data) {
                 console.log(resultUpdate.ok);
 
                 if(resultUpdate.ok == 1){
+                    response.header("Content-Type", "application/json");
                     response.status(201);
                     response.send();
 
                 } else {
+                    response.header("Content-Type", "application/json");
                     response.status(400);
                     var message = responseMessage("ERR03","The album could not be added to an existing Artist.");
                     response.send(message);
@@ -183,10 +190,12 @@ module.exports = function (data) {
                 console.log(responseAlbum.ok);
 
                 if(responseAlbum.ok == 1){
+                    response.header("Content-Type", "application/json");
                     response.status(201);
                     response.send();
 
                 } else {
+                    response.header("Content-Type", "application/json");
                     response.status(400);
                     var message = responseMessage("ERR01","The song could not be added to an existing Album.");
                     response.send(message);
@@ -202,7 +211,8 @@ module.exports = function (data) {
 
         data.getSongs(request.params.songId,0,function(songs){
             console.log(response);
-            response.status(201);
+            response.header("Content-Type", "application/json");
+            response.status(200);
             response.json(songs);
 
         });

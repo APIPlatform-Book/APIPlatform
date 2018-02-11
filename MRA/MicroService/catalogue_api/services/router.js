@@ -4,7 +4,7 @@ module.exports = function (catalogueController) {
     var router = express.Router();
 
     router.route('/catalogue/artists')
-        .get(catalogueController.searchArtists)
+        //.get(catalogueController.searchArtists)
         .post(catalogueController.createArtists);
 
     router.route('/catalogue/artists/:artistId')
