@@ -1,0 +1,19 @@
+{"artist_name": "Oasis",
+    "artist_id": "art123456",
+    "country": "UK",
+    "bio": "Oasis is a great band from Manchester",
+    "albums": [
+      {}
+    ],
+    "_links": {
+      "self": {
+        "href": "/v1/catalogue/artists/art12345"
+      },
+      "albums": {
+        "href": "/v1/catalogue/artists/art12345/albums"
+      },
+      "genres": {
+        "href": "/v1/catalogue/artists/art12345/genres"
+      }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "song_name": "Wonder wall",
+  "song_id": "son003456",
+  "isrc": "GBAAW9500189",
+  "release_date": "1995",
+   "audio": {
+      "format": "mp3",
+      "lenght_seconds": 259
+    },
+    "video": {
+      "format": "mp4",
+      "lenght_seconds": 279
+    },
+  "album": {
+    "album_id": "alb000456"
+  }
+}
+

@@ -1,0 +1,80 @@
+{
+  "album_name": "(What's the Story) Morning Glory?",
+  "album_id": "alb000456",
+  "upc": "074646735121",
+  "release_date": "1995",
+  "song_count": 12,
+  "length_seconds": 3006,
+  "artist": {
+    "artist_name": "Oasis",
+    "artist_id": "art123456",
+    "country": "UK",
+    "bio": "Oasis is a great band from Manchester",
+    "albums": [
+      {}
+    ],
+    "_links": {
+      "self": {
+        "href": "/v1/catalogue/artists/art12345"
+      },
+      "albums": {
+        "href": "/v1/catalogue/artists/art12345/albums"
+      },
+      "genres": {
+        "href": "/v1/catalogue/artists/art12345/genres"
+      }
+    }
+  },
+  "songs": [
+    {
+      "song_name": "Wonder wall",
+      "song_id": "son003456",
+      "isrc": "GBAAW9500189",
+      "release_date": "1995",
+      "artist": {
+        "artist_name": "Oasis",
+        "artist_id": "art123456",
+        "country": "UK",
+        "bio": "Oasis is a great band from Manchester",
+        "albums": [
+          {}
+        ],
+        "_links": {
+          "self": {
+            "href": "/v1/catalogue/artists/art12345"
+          },
+          "albums": {
+            "href": "/v1/catalogue/artists/art12345/albums"
+          },
+          "genres": {
+            "href": "/v1/catalogue/artists/art12345/genres"
+          }
+        }
+      },
+      "album": {},
+      "_links": {
+        "self": {
+          "href": "/v1/catalogue/songs/son003456"
+        },
+        "audio": {
+          "format": "mp3",
+          "lenght_seconds": 259,
+          "href": "/v1/catalogue/songs/son003456/audio?format=mp3"
+        },
+        "video": {
+          "format": "mp4",
+          "lenght_seconds": 279,
+          "href": "/v1/catalogue/songs/son003456/audio?format=mp4"
+        },
+        "lyrics": {
+          "href": "/v1/catalogue/songs/son003456/lyrics"
+        }
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/v1/catalogue/albums/alb000456"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+	"info": {
+		"name": "CatalogueAPI",
+		"_postman_id": "1d498497-8791-9577-fe9d-8ba644337c76",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve Artist Information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "224932f9-1222-47c5-b5f2-a7c15ab541ad",
+					"name": "Retrieve Artist Information",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:3000/catalogue/artists/art123456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"catalogue",
+								"artists",
+								"art123456"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "916",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2018 21:05:19 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"394-yDx0c5CvGLV8/AqkiomW0o75rEE\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 183,
+					"body": "{\"artist_name\":\"Oasis\",\"artist_id\":\"art123456\",\"country\":\"UK\",\"bio\":\"Oasis is a great band from Manchester\",\"genres\":\"Rock, Pop\",\"albums\":[{\"album_name\":\"(What's the Story) Morning Glory?\",\"album_id\":\"alb000456\",\"upc\":\"074646735121\",\"release_date\":\"1995\",\"song_count\":12,\"length_seconds\":3006,\"Songs\":[{\"song_name\":\"Wonder wall\",\"song_id\":\"son003456\",\"isrc\":\"GBAAW9500189\",\"release_date\":\"1995\",\"_links\":{\"self\":{\"href\":\"/v1/catalogue/songs/son003456\"},\"audio\":{\"format\":\"mp3\",\"href\":\"/v1/catalogue/songs/son003456/audio?format=mp3\"},\"video\":{\"format\":\"mp4\",\"href\":\"/v1/catalogue/songs/son003456/audio?format=mp4\"},\"lyrics\":{\"href\":\"/v1/catalogue/songs/son003456/lyrics\"}}}],\"_links\":{\"self\":{\"href\":\"/v1/catalogue/albums/alb000456\"}}}],\"_links\":{\"self\":{\"href\":\"/v1/catalogue/artists/art123456\"},\"albums\":{\"href\":\"/v1/catalogue/artists/art123456/albums\"},\"genres\":{\"href\":\"/v1/catalogue/artists/art123456/genres\"}}}"
+				}
+			]
+		},
+		{
+			"name": "Create Songs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"song_name\": \"Wonder wall\",\r\n  \"song_id\": \"son003456\",\r\n  \"isrc\": \"GBAAW9500189\",\r\n  \"release_date\": \"1995\",\r\n   \"audio\": {\r\n      \"format\": \"mp3\",\r\n      \"lenght_seconds\": 259\r\n    },\r\n    \"video\": {\r\n      \"format\": \"mp4\",\r\n      \"lenght_seconds\": 279\r\n    },\r\n  \"album\": {\r\n    \"album_id\": \"alb000456\"\r\n  }\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/catalogue/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"catalogue",
+						"songs"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Artist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"artist_name\": \"Oasis\",\n \"artist_id\": \"art123456\",\n \"country\": \"UK\",\n \"bio\": \"Oasis is a great band from Manchester\",\n \"genres\": \"Rock, Pop\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/catalogue/artists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"catalogue",
+						"artists"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Album",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"album_name\": \"(What's the Story) Morning Glory?\",\n  \"album_id\": \"alb000456\",\n  \"upc\": \"074646735121\",\n  \"release_date\": \"1995\",\n  \"song_count\": 12,\n  \"length_seconds\": 3006,\n  \"artist\": {\n    \"artist_id\": \"art123456\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/catalogue/albums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"catalogue",
+						"albums"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
