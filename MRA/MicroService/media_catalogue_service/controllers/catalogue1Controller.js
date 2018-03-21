@@ -115,7 +115,7 @@ module.exports = function (data) {
                     artist_id: result[0].artist_id,
                     country: result[0].country,
                     bio: result[0].bio,
-                    genres: result[0].genres,
+                    //genres: result[0].genres,
                     'albums': album
 
                 })

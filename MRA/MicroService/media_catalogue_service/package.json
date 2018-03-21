@@ -1,5 +1,5 @@
 {
-  "name": "catalogue_api",
+  "name": "media_catalogue_service",
   "version": "1.0.0",
   "description": "Catalogue api is created for the MRA example use case that supports the Oracle API Platform CS book",
   "main": "server.js",
