@@ -1,5 +1,5 @@
 # API Platform
-![Cover](https://github.com/APIPlatform-Book/APIPlatform/blob/master/Cover_x300.png) 
+<img src="https://github.com/APIPlatform-Book/APIPlatform/blob/master/Cover_x300.png" width="150" align="right">
 This website seeks to fulfill several purposes:
   - Be a resource radiator for information about APIs covering techniques, design thinking, standards and bast practise
   - Support the book the site authors are writing [Oracle API Platform Cloud Service](https://www.packtpub.com/virtualization-and-cloud/oracle-api-platform-cloud-service) 
