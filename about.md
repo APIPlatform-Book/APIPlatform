@@ -23,12 +23,8 @@ __Chapter 6 – Creating and publishing the API__ – With a gateway ready, an A
 
 __Chapter 7 – Testing with API Fortress__ – With an API configured and deployed it needs to be tested. Whilst there are a number of tools available for this task APIFortress has a level of integration with the API-P CS which makes the process even easier. 
 
-__Chapter 8 – Configuration Management__ – Change control for APIs is as important as it is for code. This chapter looks at the strategies through which we can apply configuration management to our API definitions, API blueprints and so on.
+__Chapter 8 – Implementing OAuth 2__ – With webservices, particularly REST ones, OAuth is becoming the defacto norm for authentication and authorization for user based credentials. In this chapter, we look at how to setup OAuth2 with the API-P CS.
 
-__Chapter 9 – Implementing OAuth 2__ – With webservices, particularly REST ones, OAuth is becoming the defacto norm for authentication and authorization for user based credentials. In this chapter, we look at how to setup OAuth2 with the API-P CS.
+__Chapter 9 – Implementing Custom Policies__ – API-P CS provides several approaches to develop our own API policies. This chapter will walk through the process of building our own custom API policy using Groovy scripting and using the Java SDK then applying it to our use case.
 
-__Chapter 10 – Implementing Custom Policies__ – API-P CS provides several approaches to develop our own API policies. This chapter will walk through the process of building our own custom API policy using Groovy scripting and then applying it to our use case.
-
-__Chapter 11 – Policy SDK Overview__ – Sometimes a custom policy through the scripting framework provided is not sufficient and we need to build our own policy using Java. API-P CS provides an SDK for this very purpose. In this chapter, we look at what the SDK provides and what we need to do to implement our own policy.
-
-__Chapter 12 – Migrating APIs from Oracle API Management 12c to the API Platform Cloud Service__ – API-P CS is not the 1st Oracle API product. API Management 12c represents Oracle’s 2nd generation of API Platform, and for those not starting with a clean sheet will need to understand the options for migrating from the older product.
+__Chapter 10 – Migrating APIs from Oracle API Management 12c to the API Platform Cloud Service__ – API-P CS is not the 1st Oracle API product. API Management 12c represents Oracle’s 2nd generation of API Platform, and for those not starting with a clean sheet will need to understand the options for migrating from the older product.
