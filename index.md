@@ -7,7 +7,7 @@ This website seeks to fulfill several purposes:
 
 
 ## Site Resources
-- [About the Book](about.md) (Order the book [here](http://bit.ly/APIP-CS) or [here](http://bit.ly/APIP-CS-Amazon) )
+- [About the Book](about.md) (Order the book [here](https://bit.ly/APIP-CS) or [here](https://bit.ly/APIP-CS-Amazon) )
 - About the Authors
  -- [Luis Weir](auth-lw.md)
  -- [Phil Wilkins](auth-pw.md)
