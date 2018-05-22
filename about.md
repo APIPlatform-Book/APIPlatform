@@ -27,4 +27,4 @@ __Chapter 8 – Implementing OAuth 2__ – With webservices, particularly REST o
 
 __Chapter 9 – Implementing Custom Policies__ – API-P CS provides several approaches to develop our own API policies. This chapter will walk through the process of building our own custom API policy using Groovy scripting and using the Java SDK then applying it to our use case.
 
-__Chapter 10 – Migrating APIs from Oracle API Management 12c to the API Platform Cloud Service__ – API-P CS is not the 1st Oracle API product. API Management 12c represents Oracle’s 2nd generation of API Platform, and for those not starting with a clean sheet will need to understand the options for migrating from the older product.
+__Chapter 10 – Moving from API Management 12c to APIP CS__ – API-P CS is not the 1st Oracle API product. API Management 12c represents Oracle’s 2nd generation of API Platform, and for those not starting with a clean sheet will need to understand the options for migrating from the older product.
